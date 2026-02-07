@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://drejkl7qn57j2"]
+
+[node name="MainMenu" type="Control" unique_id=2071250012]
+layout_mode = 3
+anchor_right = 2.2222223
+anchor_bottom = 2.4691358
+offset_right = -2346.667
+offset_bottom = -1586.6665
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1064578777]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.25
+anchor_bottom = 1.325
+offset_right = -480.0
+offset_bottom = -351.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2485, 0.147, 0.35, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=633164335]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.271875
+anchor_bottom = 1.41625
+offset_right = -522.0
+offset_bottom = -449.55005
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=2087910741]
+layout_mode = 2
+alignment = 1
+
+[node name="TopMenuVBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1894548623]
+layout_mode = 2
+
+[node name="MiscSettingsButton" type="MenuButton" parent="MarginContainer/VBoxContainer/TopMenuVBox" unique_id=1879103866]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+
+[node name="LanguageButton" type="MenuButton" parent="MarginContainer/VBoxContainer/TopMenuVBox" unique_id=2073590244]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 32
+text = "(文/A) 🌐"
+
+[node name="Title Domscript" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1001592575]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 92
+text = "Emily"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title Subscript" type="Label" parent="MarginContainer/VBoxContainer" unique_id=505860431]
+layout_mode = 2
+size_flags_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "The Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonsVbox" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=206951283]
+layout_mode = 2
+size_flags_vertical = 2
+
+[node name="StartEmilyButton" type="Button" parent="MarginContainer/VBoxContainer/ButtonsVbox" unique_id=732083419]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Play Emily"
+
+[node name="PickEmilyButton" type="Button" parent="MarginContainer/VBoxContainer/ButtonsVbox" unique_id=42219609]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Pick Emily"
+
+[node name="QuitEmilyButton" type="Button" parent="MarginContainer/VBoxContainer/ButtonsVbox" unique_id=1908871859]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Quit Emily"
